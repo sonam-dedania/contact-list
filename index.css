@@ -91,7 +91,10 @@ table tr td{
 {
     background-color: greenyellow;
 }
-
+.back-gray
+{
+    background-color: grey;
+}
 .basic-info
 {
     

@@ -1,3 +1,10 @@
+// To Do
+// Side bar
+// beautification
+// Add contact
+// Delete contact
+
+
 let api = [{
     name: "mike huston",
     email: "mikehuston@gmail.com",
@@ -23,21 +30,38 @@ let api = [{
     phoneno: "2329330239",
 }];
 
-function updateInfo(i) {
-    $('#name').html(api[i].name);
-    $('#fullname').html(api[i].name);
-    $('#email').html(api[i].email);
-    $('#phoneno').html(api[i].phoneno);
-    $('#company').html(api[i].company);
-    $('#address').html(api[i].address);
-
+function addContact() {
+    let newContact = {
+        name: "Puju", //$('#search').val(),
+        email: "sonamdedania@gmail.com",
+        company: "Google",
+        color: "back-color-yellow",
+        address: "wqpkssdjd",
+        phoneno: "2329330239",
+    };
+    api.push(newContact);
+    displayContact();
 }
 
-$(document).ready(function () {
+function updateInfo(k) {
+    $('#name').html(api[k].name);
+    $('#fullname').html(api[k].name);
+    $('#email').html(api[k].email);
+    $('#phoneno').html(api[k].phoneno);
+    $('#company').html(api[k].company);
+    $('#address').html(api[k].address);
 
+
+    for (let j = 0; j < api.length; j++) {
+        $('#c' + j).removeClass('back-gray');
+    }
+    $('#c' + k).addClass('back-gray');
+}
+
+function displayContact() {
     let contactObject = "";
     for (let i = 0; i < api.length; i++) {
-        contactObject += '<div class="row" onClick="updateInfo(' + i + ')">';
+        contactObject += '<div class="row" id="c' + i + '" onClick="updateInfo(' + i + ')">';
         contactObject += '    <div class="col-lg-2">';
         contactObject += '        <input type="checkbox">';
         contactObject += '    </div>';
@@ -56,4 +80,11 @@ $(document).ready(function () {
     }
 
     $('.contactListContainer').html(contactObject);
+}
+
+$(document).ready(function () {
+
+    displayContact();
+    // addContact();
+
 });
