@@ -1,0 +1,98 @@
+.contact
+{
+    background-color: #ffffff;
+    padding: 20px;
+}
+.add-contact-btn
+{
+    color: #ffffff;
+background: #ff7400; /* Old browsers */
+background: -moz-linear-gradient(left,  #ff7400 0%, #d100d1 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #ff7400 0%,#d100d1 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #ff7400 0%,#d100d1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7400', endColorstr='#d100d1',GradientType=1 ); /* IE6-9 */
+
+}
+.contact1
+{
+    margin-left: 20px;
+}
+.contact1 input
+{
+    border-radius: 50px;
+    background-color: #e5dfdf;
+    border-style: none;
+    padding: 7px;
+}
+.details
+{
+    padding: 20px;
+    background-color: #e5dfdf;
+}
+.gray
+{
+    color: gray;
+}
+.yellow
+{
+    background-color: khaki;
+    border-radius: 50px;
+    border-style: none;
+    height: 80px;
+    width: 90px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+.center
+{
+    text-align: center;
+}
+table
+{
+    padding: 20px;
+}
+table tr
+{
+    border-bottom: solid 1px;
+    border-color: gray;
+}
+table tr td{
+    padding: 10px;
+}
+.header
+{
+    background-color: #e5dfdf;
+    padding: 8px;
+}
+.color-box
+{
+    display: inline;
+    color: #ffffff;
+    float: left;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 50px;
+    border-style: none;
+}
+.back-color-green
+{
+    background-color: green;
+}
+.back-color-red
+{
+    background-color: crimson;
+}
+.back-color-pink
+{
+    background-color: deeppink;
+}
+.back-color-yellow
+{
+    background-color: greenyellow;
+}
+
+.basic-info
+{
+    
+}
