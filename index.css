@@ -1,21 +1,50 @@
 .contact
 {
     background-color: #ffffff;
-    padding: 20px;
+    padding-top: 25px;
+    padding-left: 93px;
+    padding-bottom: 85px;
 }
+
 .add-contact-btn
 {
-    color: #ffffff;
+color: #ffffff;
 background: #ff7400; /* Old browsers */
 background: -moz-linear-gradient(left,  #ff7400 0%, #d100d1 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(left,  #ff7400 0%,#d100d1 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to right,  #ff7400 0%,#d100d1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7400', endColorstr='#d100d1',GradientType=1 ); /* IE6-9 */
-
+}
+.nav-background
+{
+position: fixed;
+left: 0;
+margin: 0;
+padding: 0;
+height: 100%;
+width: 70px;
+z-index: 1;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f48230+1,db76db+100 */
+background: #f48230; /* Old browsers */
+background: -moz-linear-gradient(top,  #f48230 1%, #db76db 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f48230 1%,#db76db 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f48230 1%,#db76db 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f48230', endColorstr='#db76db',GradientType=0 ); /* IE6-9 */
+}
+nav i
+{
+    color: #ffffff;
 }
 .contact1
 {
-    margin-left: 20px;
+    margin-left: 92px;
+    margin-top: -70px;
+    margin-bottom: 20px;
+}
+.contact-info
+{
+    margin-left: 96px;
+    margin-right: 96px;
 }
 .contact1 input
 {
@@ -28,6 +57,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7400', end
 {
     padding: 20px;
     background-color: #e5dfdf;
+    width: 400px;
+}
+.basic-info
+{
+    margin-left: 48px;
 }
 .gray
 {
@@ -63,17 +97,27 @@ table tr td{
 .header
 {
     background-color: #e5dfdf;
-    padding: 8px;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+.header p
+{
+    text-align: left;
+    margin-left: 10px;
+}
+.contactListContainer input{
+    margin-left: 10px;
 }
 .color-box
 {
     display: inline;
     color: #ffffff;
     float: left;
-    padding: 10px;
+    padding: 14px;
     margin-right: 10px;
     border-radius: 50px;
     border-style: none;
+    margin-left: 53px;
 }
 .back-color-green
 {
@@ -93,9 +137,6 @@ table tr td{
 }
 .back-gray
 {
-    background-color: grey;
-}
-.basic-info
-{
-    
+    background-color: #e5dfdf;
+    padding: 10px;
 }

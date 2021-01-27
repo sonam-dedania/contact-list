@@ -30,14 +30,41 @@ let api = [{
     phoneno: "2329330239",
 }];
 
+
+function addContactInfo() {
+    let formData = "";
+    let name1 = "";
+    let email1 = "";
+    let company1 = "";
+
+    formData += '<form>';
+    formData += '       <div class="form-group">';
+    formData += '<label for="name">Name</label>';
+    formData += '<input type="name" class="form-control" id="name1">';
+    formData += '</div>';
+    formData += '<div class="form-group">';
+    formData += '    <label for="email">Email</label>';
+    formData += '    <input type="email" class="form-control" id="email1">';
+    formData += '</div>';
+    formData += '    <div class="form-group">';
+    formData += '        <label for="company">Company</label>';
+    formData += '        <input type="text" class="form-control" id="company1">';
+    formData += '</div>';
+    formData += '</form>';
+
+    alert($('#add-contact').html(formData));
+
+    name1 = $('#name1').val();
+    email1 = $('#email1').val();
+    company1 = $('#company1').val();
+
+}
+
 function addContact() {
     let newContact = {
-        name: "Puju", //$('#search').val(),
-        email: "sonamdedania@gmail.com",
-        company: "Google",
-        color: "back-color-yellow",
-        address: "wqpkssdjd",
-        phoneno: "2329330239",
+        name: "name1", //$('#search').val(),
+        email: "email1",
+        company: "company1",
     };
     api.push(newContact);
     displayContact();

@@ -14,15 +14,26 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-default nav-background">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="contact">
         <h3>Contacts</h3>
         <p>Welcome to FisrtCRM Contact Page</p>
     </div>
     <div class="contact1">
         <input type="name" placeholder="Search contact" id="search">
-        <button class="btn add-contact-btn">+ Add Contact</button>
+        <button class="btn add-contact-btn" id="add-contact" onclick="addContactInfo()">+ Add Contact</button>
     </div>
-    <div class="container">
+    <div class="contact-info">
         <div class="row">
             <div class="col-lg-6">
                 <div class="header">
@@ -39,7 +50,6 @@
                     </div>
                 </div>
                 <div class="contactListContainer">
-                    TEST
                 </div>
 
             </div>
@@ -78,6 +88,7 @@
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
