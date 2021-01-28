@@ -15,6 +15,19 @@ background: -webkit-linear-gradient(left,  #ff7400 0%,#d100d1 100%); /* Chrome10
 background: linear-gradient(to right,  #ff7400 0%,#d100d1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7400', endColorstr='#d100d1',GradientType=1 ); /* IE6-9 */
 }
+.add-contact-btn:hover
+{
+    color: #ffffff;
+}
+.add-contact-btn:focus
+{
+    outline: none;
+    color: #ffffff;
+}
+.delete-btn
+{
+    float:right;
+}
 .nav-background
 {
 position: fixed;

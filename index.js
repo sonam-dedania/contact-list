@@ -30,46 +30,38 @@ let api = [{
     phoneno: "2329330239",
 }];
 
-
-function addContactInfo() {
-    let formData = "";
+function addContact() {
     let name1 = "";
     let email1 = "";
     let company1 = "";
-
-    formData += '<form>';
-    formData += '       <div class="form-group">';
-    formData += '<label for="name">Name</label>';
-    formData += '<input type="name" class="form-control" id="name1">';
-    formData += '</div>';
-    formData += '<div class="form-group">';
-    formData += '    <label for="email">Email</label>';
-    formData += '    <input type="email" class="form-control" id="email1">';
-    formData += '</div>';
-    formData += '    <div class="form-group">';
-    formData += '        <label for="company">Company</label>';
-    formData += '        <input type="text" class="form-control" id="company1">';
-    formData += '</div>';
-    formData += '</form>';
-
-    alert($('#add-contact').html(formData));
+    let phone1 = "";
+    let address1 = "";
 
     name1 = $('#name1').val();
     email1 = $('#email1').val();
     company1 = $('#company1').val();
+    phone1 = $('#phone1').val();
+    address1 = $('#address1').val();
 
-}
-
-function addContact() {
     let newContact = {
-        name: "name1", //$('#search').val(),
-        email: "email1",
-        company: "company1",
+        name: name1, //$('#search').val(),
+        email: email1,
+        company: company1,
+        phone: phone1,
+        address: address1,
     };
     api.push(newContact);
     displayContact();
 }
-
+function deleteContact() {
+    alert("dsdjsa");
+    for (let i = 0; i < api.length; i++) {
+        if (api[i].name == $('#name').html()) {
+            api.splice(i, 1);
+        }
+    }
+    displayContact();
+}
 function updateInfo(k) {
     $('#name').html(api[k].name);
     $('#fullname').html(api[k].name);
