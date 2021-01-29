@@ -1,14 +1,36 @@
+.bold
+{
+    font-weight: bold;
+}
 .contact
 {
     background-color: #ffffff;
-    padding-top: 25px;
+    padding-top: 5px;
     padding-left: 93px;
-    padding-bottom: 85px;
+    padding-bottom: 18px;
 }
-
+.contact i
+{
+    background: #f48230; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f48230 1%, #db76db 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f48230 1%,#db76db 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f48230 1%,#db76db 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f48230', endColorstr='#db76db',GradientType=0 ); /* IE6-9 */
+    }
+.contact p
+{
+    margin-left: 40px;
+}
+.contact-hr
+{
+    box-shadow: 4px 6px 9px -6px grey;
+    border: solid 0px #e5dfdf;
+    height: 15px;
+}
 .add-contact-btn
 {
 color: #ffffff;
+margin-left: 10px;
 background: #ff7400; /* Old browsers */
 background: -moz-linear-gradient(left,  #ff7400 0%, #d100d1 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(left,  #ff7400 0%,#d100d1 100%); /* Chrome10-25,Safari5.1-6 */
@@ -35,8 +57,9 @@ left: 0;
 margin: 0;
 padding: 0;
 height: 100%;
-width: 70px;
+width: 60px;
 z-index: 1;
+box-shadow: 4px -9px 13px -6px gray;
 /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f48230+1,db76db+100 */
 background: #f48230; /* Old browsers */
 background: -moz-linear-gradient(top,  #f48230 1%, #db76db 100%); /* FF3.6-15 */
@@ -44,15 +67,28 @@ background: -webkit-linear-gradient(top,  #f48230 1%,#db76db 100%); /* Chrome10-
 background: linear-gradient(to bottom,  #f48230 1%,#db76db 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f48230', endColorstr='#db76db',GradientType=0 ); /* IE6-9 */
 }
-nav i
+nav ul li i
 {
     color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+}
+.nav-margin
+{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 0 auto !important;
+    margin-right: 0px !important;
 }
 .contact1
 {
     margin-left: 92px;
-    margin-top: -70px;
+    margin-top: 50px;
     margin-bottom: 20px;
+}
+.hr-div
+{
+    margin-top: -44px;
 }
 .contact-info
 {
@@ -80,7 +116,7 @@ nav i
 {
     color: gray;
 }
-.yellow
+/*.yellow
 {
     background-color: khaki;
     border-radius: 50px;
@@ -90,6 +126,21 @@ nav i
     text-align: center;
     padding: 10px;
     margin: 0 auto;
+}*/
+.yellow
+{
+  width: 80px;
+  height: 80px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #ffffff;
+  background: rgb(232, 140, 240);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  margin-left: 140px;
 }
 .center
 {
@@ -97,15 +148,19 @@ nav i
 }
 table
 {
+    margin: 0 auto;
     padding: 20px;
 }
 table tr
 {
-    border-bottom: solid 1px;
+    background-color: lavender;
     border-color: gray;
 }
 table tr td{
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .header
 {

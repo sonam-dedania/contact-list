@@ -15,7 +15,7 @@
 
 <body>
     <nav class="navbar navbar-default nav-background">
-        <div class="container-fluid">
+        <div class="container-fluid nav-margin">
             <ul class="nav navbar-nav">
                 <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a></li>
                 <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a></li>
@@ -26,8 +26,11 @@
     </nav>
 
     <div class="contact">
-        <h3>Contacts</h3>
+        <h2 class="bold"><i class="fa fa-address-book-o" aria-hidden="true"></i> Contacts</h2>
         <p>Welcome to FisrtCRM Contact Page</p>
+    </div>
+    <div class="hr-div">
+        <hr class="contact-hr" />
     </div>
     <div class="contact1">
         <input type="name" placeholder="Search contact" id="search">
@@ -79,16 +82,16 @@
 
     <div class="contact-info">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="header">
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
                             <p>+</p>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
                             <p class="gray">Basic info</p>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
                             <p class="gray">Company</p>
                         </div>
                     </div>
@@ -97,43 +100,46 @@
                 </div>
 
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="details">
                     <div class="center">
                         <button class="btn delete-btn" onClick="deleteContact()"><i class="fa fa-trash-o"
                                 aria-hidden="true"></i></button>
                         <div class="yellow">
-                            <h2>MH</h2>
+                            <h3>MH</h3>
                         </div>
-                        <h4 id="name">Mike Huston</h4>
+                        <h4 id="name" class="bold">Mike Huston</h4>
                         <p class="gray">Production Manager</p>
                     </div>
                     <table>
-                        <tr>
-                            <td class="gray">Full name:</td>
-                            <td id="fullname">Mike Huston</td>
-                        </tr>
-                        <tr>
-                            <td class="gray">Email:</td>
-                            <td id="email">mikehuston@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td class="gray">Phone:</td>
-                            <td id="phoneno">5342302305320</td>
-                        </tr>
-                        <tr>
-                            <td class="gray">Company:</td>
-                            <td id="company">No information required</td>
-                        </tr>
-                        <tr>
-                            <td class="gray">Address:</td>
-                            <td id="address">47, West pirebag road.</td>
-                        </tr>
+                        <tbody>
+                            <tr>
+                                <td class="gray">Full name:</td>
+                                <td id="fullname">Mike Huston</td>
+                            </tr>
+                            <tr>
+                                <td class="gray">Email:</td>
+                                <td id="email">mikehuston@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td class="gray">Phone:</td>
+                                <td id="phoneno">5342302305320</td>
+                            </tr>
+                            <tr>
+                                <td class="gray">Company:</td>
+                                <td id="company">No information required</td>
+                            </tr>
+                            <tr>
+                                <td class="gray">Address:</td>
+                                <td id="address">47, West pirebag road.</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
         </div>
 
+        <div id="div1"></div>
 </body>
 
 </html>

@@ -1,8 +1,7 @@
 // To Do
-// Side bar
+// Side bar & Top bar
 // beautification
-// Add contact
-// Delete contact
+// Search contact
 
 
 let api = [{
@@ -81,17 +80,17 @@ function displayContact() {
     let contactObject = "";
     for (let i = 0; i < api.length; i++) {
         contactObject += '<div class="row" id="c' + i + '" onClick="updateInfo(' + i + ')">';
-        contactObject += '    <div class="col-lg-2">';
+        contactObject += '    <div class="col-sm-2">';
         contactObject += '        <input type="checkbox">';
         contactObject += '    </div>';
-        contactObject += '    <div class="col-lg-6">';
+        contactObject += '    <div class="col-sm-6">';
         contactObject += '        <div class="color-box ' + api[i].color + '">' + api[i].name.substr(0, 2) + '</div>';
         contactObject += '        <div class="basic-info">';
         contactObject += '            <h4>' + api[i].name + '</h4>';
         contactObject += '            <p>' + api[i].email + '</p>';
         contactObject += '        </div>';
         contactObject += '    </div>';
-        contactObject += '    <div class="col-lg-4">';
+        contactObject += '    <div class="col-sm-4">';
         contactObject += '        <p>' + api[i].company + '</p>';
         contactObject += '    </div>';
         contactObject += '</div>';
@@ -101,9 +100,19 @@ function displayContact() {
     $('.contactListContainer').html(contactObject);
 }
 
+function ajaxTest() {
+    $.ajax({
+        url: "https://api.github.com/users", success: function (result) {
+            console.log(result);
+            // $("#div1").html(JSON.stringify(result));
+        }
+    });
+}
+
 $(document).ready(function () {
 
     displayContact();
     // addContact();
+    ajaxTest();
 
 });
